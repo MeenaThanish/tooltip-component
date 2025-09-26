@@ -22,3 +22,22 @@
   .tooltip.block > div {
     position: relative; /* Needed for absolute positioning of tooltip */
   }
+.tooltips > div > div:nth-child(2) {
+  display: none;
+  position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  z-index: 10;
+  margin-top: 5px;
+}
+
+.tooltips > div {
+  position: relative;
+}
+
+.tooltips > div:hover > div:nth-child(2) {
+  display: block;
+}
+
